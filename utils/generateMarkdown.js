@@ -72,7 +72,7 @@ ${userInput.description}
 - [Questions](#Questions)
 
 ## License
-${licenseBadge} | ${licenseURL}
+${licenseBadge} | [View License](${licenseURL})
 
 ## Installation 
 ${userInput.install}
