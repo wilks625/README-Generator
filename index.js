@@ -5,6 +5,7 @@ const util = require('util');
 //imported modules
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -32,7 +33,7 @@ const questions = [
         type: 'list',
         name: 'licenseType',
         message: "What kind of license should your project have?",
-        choices: ["MIT", "ISC", "wtfpl"]
+        choices: ["MIT", "ISC", "Mozilla", "none"]
       },
       {
         type: 'input',
@@ -41,12 +42,12 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'command',
+        name: 'testCommand',
         message: 'What command should be run to run tests?',
       },
       {
         type: 'input',
-        name: 'need-to-know',
+        name: 'usage',
         message: 'What does the user need to know about using the repo?',
       },
       {
@@ -69,13 +70,11 @@ const writeToFile = (userInput) => {// THIS IS WHERE YOU LEFT OFF, STEPHEN
 // TODO: Create a function to initialize app
 const init = () => {
     promptUser()
-        .then((userInput) => writeToFile('README.md', generateMarkdown(userInput)))
+        .then((userInput) => writeFileAsync('README.md', generateMarkdown(userInput)))
     //   .then((answers) => writeFileAsync('index.html', generateHTML(answers)))
-      .then(() => console.log('Successfully wrote to index.html'))
+      .then(() => console.log('Successfully wrote to README.md!!!'))
       .catch((err) => console.error(err));
   };
 
 // // Function call to initialize app
 init();
-
-// console.log(userInput)
