@@ -5,7 +5,7 @@ README-Generator
 ## Description
 This application quickly and easily creates a README file by having the user interact with the command-line. This allows the project creator to devote more time to working on their project.
 
-the README.md file is dynamically generated from the user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). The user input includes Project title, Description, Installation, Usage, License, Contributing, Tests, and Questions. Below is a link to a video walkthrough of how to use the application. Enjoy!
+The README.md file is dynamically generated from the user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). The user input includes Project title, Description, Installation, Usage, License, Contributing, Tests, and Questions. Below is a link to a video walkthrough of how to use the application. Enjoy!
 
 Video walkthrough: https://drive.google.com/file/d/1Cw6CH-5bjm70ADHcu31YdLJ7246iJ4ih/view
 
