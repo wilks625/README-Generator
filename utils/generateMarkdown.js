@@ -1,5 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function that returns a license badge based on which license type is passed in
+// If there is no license selected, returns an empty string
 const renderLicenseBadge = (licenseType) => {
   let licenseIMG;
 
@@ -20,8 +20,8 @@ const renderLicenseBadge = (licenseType) => {
   return licenseIMG;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function that returns the license link based on which license is selected
+// If there is no license selected, returns an empty string
 const renderLicenseLink = (licenseType) => {
   let licenseURL;
 
@@ -43,13 +43,7 @@ const renderLicenseLink = (licenseType) => {
   return licenseURL;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-
-
-// TODO: Create a function to generate markdown for README
+// Function that generates the markdown for README
 const generateMarkdown = (userInput) => {
 
   const licenseBadge = renderLicenseBadge(userInput.licenseType);
@@ -75,6 +69,7 @@ ${userInput.description}
 ${licenseBadge} | [View License](${licenseURL})
 
 ## Installation 
+Run the following command at the root of your project and answer the prompted questions:
 ${userInput.install}
 
 ## Usage

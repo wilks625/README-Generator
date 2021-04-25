@@ -1,9 +1,9 @@
 
 # Project Name:
-snagabox
+README-Generator
 
 ## Description
-finds xboxes within a given search radius
+This application has user answer prompts, and then this information is used to generate a README.md file
 
 ## Table of Contents
 - [Title](#Project-Name)
@@ -16,13 +16,14 @@ finds xboxes within a given search radius
 - [Questions](#Questions)
 
 ## License
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) | [View License](https://opensource.org/licenses/MPL-2.0)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC) | [View License](https://opensource.org/licenses/ISC)
 
 ## Installation 
-npm i
+Run the following command at the root of your project and answer the prompted questions:
+npm install
 
 ## Usage
-be careful
+nothing
 
 ## Contributions
 no contributions at this time
